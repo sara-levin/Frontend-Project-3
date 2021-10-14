@@ -31,6 +31,9 @@ html {
 	/*margin: 130px 0 40px 0;
 	position: relative;*/
 	
+li{
+    line-height: normal;
+}
 
   .container {
     background: #fff;
@@ -90,6 +93,10 @@ html {
     text-decoration: line-through;
   }
 
+  .span {
+    line-height: normal;
+  }
+
   
   .delete-todo {
     border: none;
@@ -135,4 +142,3 @@ html {
   .todo-list:empty + .empty-state {
     display: flex;
   }
-
