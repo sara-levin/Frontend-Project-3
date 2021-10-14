@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #f5f5f5;
+	color: #4d4d4d;
+	min-width: 230px;
+	max-width: 550px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
+
+
+   /*font-family:
+   -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+   line-height: 1.4;*/
+  }
+  
+	
+	/*margin: 130px 0 40px 0;
+	position: relative;*/
+	
+
+  .container {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #innerBox{
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .app-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 80px;
+    opacity: 0.5;
+  }
+  
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .todo-list {
+    flex: 90;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .todo-item {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .todo-item span {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  
+  .done span {
+    text-decoration: line-through;
+  }
+
+  
+  .delete-todo {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .delete-todo svg {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+  
+  /* Add this below all the other styles */
+
+  
+  .checklist-icon {
+    margin-bottom: 20px;
+  }
+  
+  .empty-state__title, .empty-state__description {
+    margin-bottom: 20px;
+  }
+  
+  /* Add this below the other styles */
+  .todo-list:empty {
+    display: none;
+  }
+  
+  .todo-list:empty + .empty-state {
+    display: flex;
+  }
