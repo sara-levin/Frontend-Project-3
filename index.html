@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To-Do-List. Make your own To-Do-List, and keep track of what needs to be done!">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= 'main.js' defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="app-title">todos</h1>
+        </header>
+        <div class="container">
+            <section id="innerBox">
+                <button type="button" onclick="toggleAll()" id="selectAll">🔽</button>
+                <form class="js-form">
+                <input autofocus type="text" aria-label="Enter a new todo item" placeholder="What needs to be done?" class="js-todo-input">
+                </form>
+            </section>
+            <ul class="todo-list js-todo-list"></ul>
+            <button class="button" onclick="clearCompleted()" id="clearCompleted">CLEAR COMPLETED</button>
+            <button class="button" onclick="showCompleted()" id="showCompleted">SHOW COMPLETED</button>
+            <button class="button" onclick="showRemaining()" id="showRemaining">SHOW REMAINING</button>
+            <button class="button" onclick="showAll()" id="showAll">SHOW ALL</button>
+            <div id="taskcounter"></div>
+        </div>
+        
+    </main>
+</body>
+</html>
