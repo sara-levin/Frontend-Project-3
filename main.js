@@ -18,7 +18,7 @@ function renderTodo(todo) {
    const listEntry = document.createElement("li");
     listEntry.id = todo.id + "x";
     const isChecked = todo.checked ? 'done': '';
-    const HTMLstring = "<input type=checkbox id=" + todo.id + "class= checkbox></input>" +  
+    const HTMLstring = "<input type=checkbox class=checkbox id=" + todo.id + "></input>" +  
     "<span class= span>" + todo.text + "</span>" +
     "<button class= delete-todo js-delete-todo >" +
     "❌" +
