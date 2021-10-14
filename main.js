@@ -126,7 +126,7 @@ function updateCounter()
 var count = document.getElementById("taskcounter")
   var tasksRemaining = todoItems.length - checkedItems.length
 
-    count.innerHTML = "Number of tasks remaining: "+ tasksRemaining;
+    count.innerHTML = tasksRemaining + " items left";
 }
 //#endregion
 
