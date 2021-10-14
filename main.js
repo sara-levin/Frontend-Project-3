@@ -15,11 +15,11 @@ function renderTodo(todo) {
     return
   }
 
-    const listEntry = document.createElement("li");
+   const listEntry = document.createElement("li");
     listEntry.id = todo.id + "x";
     const isChecked = todo.checked ? 'done': '';
     const HTMLstring = "<input type=checkbox id=" + todo.id + "></input>" +  
-    "<span>" + todo.text + "</span>" +
+    "<span class= span>" + todo.text + "</span>" +
     "<button class= delete-todo js-delete-todo >" +
     "❌" +
     "</button>";  
