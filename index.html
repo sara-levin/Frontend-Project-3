@@ -22,14 +22,15 @@
                 </form>
             </section>
             <ul class="todo-list js-todo-list"></ul>
-            <button class="button" onclick="clearCompleted()" id="clearCompleted">CLEAR COMPLETED</button>
-            <button class="button" onclick="showCompleted()" id="showCompleted">SHOW COMPLETED</button>
-            <button class="button" onclick="showRemaining()" id="showRemaining">SHOW REMAINING</button>
-            <button class="button" onclick="showAll()" id="showAll">SHOW ALL</button>
+            <section id="buttons">
             <div id="taskcounter"></div>
+            <button class="button" onclick="showAll()" id="showAll">All</button>
+            <button class="button" onclick="showRemaining()" id="showRemaining">Active</button>
+            <button class="button" onclick="showCompleted()" id="showCompleted">Completed</button>
+            <button class="button" onclick="clearCompleted()" id="clearCompleted">Clear Completed</button>
+            </section>
         </div>
         
     </main>
 </body>
 </html>
-
