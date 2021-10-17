@@ -15,10 +15,10 @@ function renderTodo(todo) {
     return
   }
 
-   const listEntry = document.createElement("li");
+    const listEntry = document.createElement("li");
     listEntry.id = todo.id + "x";
     const isChecked = todo.checked ? 'done': '';
-    const HTMLstring = "<input type=checkbox class=checkbox id=" + todo.id + "></input>" +  
+    const HTMLstring = "<input type=checkbox id=" + todo.id + " class= checkbox></input>" +  
     "<span class= span>" + todo.text + "</span>" +
     "<button class= delete-todo js-delete-todo >" +
     "❌" +
@@ -215,14 +215,3 @@ function showAll()
 }
 
 //#region Local storage / reload save
-document.addEventListener('DOMContentLoaded', () => {
-  const ref = localStorage.getItem('todoItems');
-  if (ref) {
-    todoItems = JSON.parse(ref);
-    todoItems.forEach(t => {
-      renderTodo(t);
-    });
-  }
-});
-//#endregion
-
